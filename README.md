@@ -1,0 +1,6 @@
+- [0-Building-a-workflow](./0-Building-a-workflow)
+- [1-Preparing-datasets](./1-Preparing-datasets)
+- [2-Evaluating-returns-and-backtesting](./2-Evaluating-returns-and-backtesting)
+- [3-Reinforcement-Learning](./3-Reinforcement-Learning)
+- [4-Optimization-and-Regularization](./4-Optimization-and-Regularization)
+- [5-Momentum-Trading-and-GBM](./5-Momentum-Trading-and-GBM)

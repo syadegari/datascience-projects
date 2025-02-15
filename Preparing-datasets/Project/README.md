@@ -39,13 +39,3 @@ The script performs the following tasks:
   - Modified Apple and Microsoft stock datasets
   - A merged dataset of monthly percentage changes for Apple, Microsoft, and inflation
 
-## Dependencies
-
-The script uses the following Python libraries:
-
-- `numpy`
-- `pandas`
-- `matplotlib`
-- `seaborn`
-- `scikit-learn`
-

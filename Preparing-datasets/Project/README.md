@@ -5,7 +5,7 @@ This demonstrates an example of complete data engineering pipeline for a machine
 
 ## Overview
 
-The script performs the following tasks:
+The followings are done for this project:
 
 - **Data Ingestion:**  
   Import data from CSV files hosted on a public GitHub repository.  

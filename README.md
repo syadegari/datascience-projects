@@ -8,3 +8,4 @@ This repository is a growing collection of projects related to data science in f
 - [Reinforcement Learning](./Reinforcement-Learning)
 - [Optimization and Regularization](./Optimization-and-Regularization)
 - [Momentum Trading and GBM](./Momentum-Trading-and-GBM)
+- [Supervised Learning for Short Horizon Trading](./Supervised-learning)

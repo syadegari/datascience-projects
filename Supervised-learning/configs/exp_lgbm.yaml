@@ -1,0 +1,34 @@
+# LightGBM baseline on 40-bar windows
+model: lightgbm
+
+model_params:
+  params:
+    objective: binary
+    metric: auc
+    learning_rate: 0.05
+    num_leaves: 63          # ~2^(depth) – 1
+    feature_fraction: 0.8
+    bagging_fraction: 0.8
+    bagging_freq: 5
+  num_boost_round: 600      # stopping handled via val AUC in future versions
+
+class_weight: balanced      # generate sample_weight array
+lookback: 40
+top_k: 0.02
+
+feature_cols:
+  - log_ret
+  - z_log_ret
+  - vol_scaled
+
+data:
+  train: data/splits/train_scaled_matrix.parquet
+  val:   data/splits/val_scaled_matrix.parquet
+  test:  data/splits/test_scaled_matrix.parquet
+
+  # paths reused for back-test
+  train_df: data/splits/train_scaled_matrix.parquet
+  val_df:   data/splits/val_scaled_matrix.parquet
+  test_df:  data/splits/test_scaled_matrix.parquet
+
+artifact_dir: artifacts/exp_lightgbm

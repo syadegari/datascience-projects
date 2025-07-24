@@ -1,0 +1,29 @@
+model: logreg
+model_params:
+    C: 0.1
+    penalty: l2
+    solver: lbfgs
+    max_iter: 2000
+    n_jobs: -1
+
+class_weight: balanced
+lookback: 40
+top_k: 0.02
+
+feature_cols:
+    - log_ret
+    - z_log_ret
+    - vol_scaled
+
+data:
+    train: data/splits/train_scaled_matrix.parquet
+    val: data/splits/val_scaled_matrix.parquet
+    test: data/splits/test_scaled_matrix.parquet
+
+    # same files for back-test
+    train_df: data/splits/train_scaled_matrix.parquet
+    val_df: data/splits/val_scaled_matrix.parquet
+    test_df: data/splits/test_scaled_matrix.parquet
+
+artifact_dir: artifacts/exp_logreg
+    

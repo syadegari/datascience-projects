@@ -1,0 +1,10 @@
+# dates for train/val/test
+train:
+  start: 2018-09-19
+  end:   2021-01-01
+val:
+  start: 2021-01-02
+  end:   2021-06-01
+test:
+  start: 2021-06-02
+  end:   2021-12-13
